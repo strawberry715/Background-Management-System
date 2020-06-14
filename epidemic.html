@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>查看疫情</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/epidemic.css">
+</head>
+<body onload="onLoadedate()">
+
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">**查看疫情</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#china">国内疫情</a></li>
+        <li><a href="#world">国外疫情</a></li>
+        <li><a href="#zhejiang">宁波疫情</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="china">
+  <h3>国内疫情</h3>
+  <div class="map">
+    <div id="date1">
+      <table id="t1">
+        <tr>
+          <td>
+            <p>累计确诊</p>
+            <p id="p1" style="color: rgb(16,174,186)"></p>
+          </td>
+          <td>
+            <p>今日新增</p>
+            <p id="p2" style="color: rgb(232,109,72)"></p>
+          </td>
+          <td>
+            <p>累计死亡</p>
+            <p id="p3" style="color: rgb(236,146,23)"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>现有确诊</p>
+            <p id="p4" style="color: rgb(232,49,50)"></p>
+          </td>
+          <td>
+            <p>境外输入确诊</p>
+            <p id="p5" style="color: rgb(255,106,87)"></p>
+          </td>
+          <td>
+            <p>现有疑似</p>
+            <p id="p6" style="color: rgb(71,109,160)"></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="mapchart1">
+    </div>
+  </div>
+  <div class="trend" id="chinatrend">
+  </div>
+</div>
+
+<div id="world">
+  <h3>国外疫情</h3>
+  <div class="map">
+    <div id="date2">
+      <table>
+        <tr>
+          <td>
+            <p>累计确诊</p>
+            <p id="w1" style="color: rgb(16,174,186)"></p>
+          </td>
+          <td>
+            <p>现有确诊</p>
+            <p id="w2" style="color: rgb(232,109,72)"></p>
+          </td>
+          <td>
+            <p>累计死亡</p>
+            <p id="w3" style="color: rgb(236,146,23)"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p>累计确诊</p>
+            <p style="font-size: 10px">(较昨日增加)</p>
+            <p id="w4" style="color: rgb(232,49,50)"></p>
+          </td>
+          <td>
+            <p>现有确诊</p>
+            <p style="font-size: 10px">(较昨日增加)</p>
+            <p id="w5" style="color: rgb(255,106,87)"></p>
+          </td>
+          <td>
+            <p>累计死亡</p>
+            <p style="font-size: 10px">(较昨日增加)</p>
+            <p id="w6" style="color: rgb(71,109,160)"></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="mapchart2">
+    </div>
+  </div>
+  <div class="trend" id="worldtrend">
+  </div>
+</div>
+
+<div id="zhejiang">
+  <h3>宁波疫情</h3>
+  <div class="map">
+    <div id="date3">
+      <table>
+        <tr>
+          <td>
+            <p>累计确诊</p>
+            <p id="n1" style="color: rgb(16,174,186)"></p>
+          </td>
+          <td>
+            <p>现有确诊</p>
+            <p id="n2" style="color: rgb(232,109,72)"></p>
+          </td>
+          <td>
+            <p>累计死亡</p>
+            <p id="n3" style="color: rgb(236,146,23)"></p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="mapchart3">
+    </div>
+  </div>
+  <div class="trend" id="zhejiangtrend">
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/china.js"></script>
+<script src="js/world.js"></script>
+<script src="js/zhejiang.js"></script>
+<script src="js/epidemic.js"></script>
+</body>
+</html>

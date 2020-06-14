@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+<div id="characters">
+    <p>欢&nbsp;迎</p>
+    <p>注&nbsp;册</p>
+    <p>******系统</p>
+</div>
+
+<div>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="username" class="col-sm-3 control-label">用户名：</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="username" placeholder="请输入您的用户名" name="un">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-3 control-label">密码：</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="password" placeholder="请输入您的密码" name="pwd">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="psd" class="col-sm-3 control-label">确认密码：</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="psd" placeholder="请确认您的密码"  onblur="checkpsw()">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">邮箱：</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="email" placeholder="请输入您的邮箱" name="em">
+            </div>
+        </div>
+        <div class="form-group" id="btn-group">
+            <div class="col-sm-5">
+                <input onclick="zhuce()" type="button" class="form-control btn btn-primary" data-toggle="modal" data-target="#myModal" value="注册">
+            </div>
+            <div class="col-sm-5">
+                <button type="reset" class="form-control btn btn-primary">重置</button>
+            </div>
+        </div>
+        <div id="register">
+            <a href="login.html">返回登录</a>
+        </div>
+    </form>
+
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <div class="modal-title">注册成功</div>
+                </div>
+                <div class="modal-body">
+                    <p>恭喜你注册成功</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="login.html" class="btn btn-primary">确定</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

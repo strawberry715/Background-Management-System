@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户管理</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/manage.css">
+
+</head>
+<body onload="admin()">
+
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">**管理员系统</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="manage.html">健康码</a></li>
+        <li><a href="manage.html">全球疫情</a></li>
+        <li><a href="user.html">用户管理</a></li>
+        <li><a href="user.html">轨迹图</a></li>
+        <li><a href="admin.html" onclick="disp()">权限设置</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="admin">
+  <hr style="width: 100%;">
+  <table class="table table-bordered" id="addad">
+    <thead>
+    <tr>
+      <th style="width: 50px">序号</th>
+      <th style="width: 110px">用户名</th>
+      <th style="width: 100px">密码</th>
+      <th style="width: 120px">邮箱</th>
+      <th style="width: 60px">权限等级</th>
+      <th style="width: 150px">权限等级设置</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--    <tr>-->
+    <!--      <td></td>-->
+    <!--      <td></td>-->
+    <!--      <td></td>-->
+    <!--      <td></td>-->
+    <!--      <td></td>-->
+    <!--      <td>-->
+    <!--        <div style="float: right">-->
+    <!--          <button>赋予一级权限</button>-->
+    <!--          <button>赋予二级权限</button>-->
+    <!--        </div>-->
+    <!--      </td>-->
+    <!--    </tr>-->
+    </tbody>
+  </table>
+<!--  <span class="glyphicon glyphicon-plus-sign" onclick="addAdmin()">增加管理员</span>-->
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.js"></script>
+<!--<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=2.0&ak=DD279b2a90afdf0ae7a3796787a0742e"></script>-->
+<!--<script type="text/javascript" src="//api.map.baidu.com/library/TrackAnimation/src/TrackAnimation_min.js"></script>-->
+<script src="js/manage.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>

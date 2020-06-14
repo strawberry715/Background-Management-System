@@ -1,0 +1,53 @@
+body{
+    background-image: url("../img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#characters{
+    width: 400px;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 50px;
+    text-align: center;
+    color:#00BFFF
+}
+form{
+    width:350px;
+    margin-left: 55%;
+    margin-top: -16%;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(255,255,255,.4);
+    border: 1px solid rgba(121,121,121,.7);
+}
+.col-sm-3{
+    padding:0;
+}
+.col-sm-9{
+    padding-left: 0;
+}
+.col-sm-5{
+    margin-left: 28px;
+}
+.form-group{
+    margin-bottom: 30px;
+}
+#btn-group{
+    margin-bottom: 10px;
+}
+#register{
+    text-align: right;
+}
+
+.modal-content{
+    background-color: rgba(223,240,216,1);
+}
+.modal-header,.modal-body,.modal-footer{
+    border: 1px solid rgba(223,240,216,1);
+}
+modal{
+    display: none;
+}
+

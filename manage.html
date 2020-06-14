@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后台管理</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/manage.css">
+
+</head>
+<body onload="onloadDate()">
+
+<nav class="navbar navbar-fixed-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">**管理员系统</a>
+		</div>
+		<div>
+			<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="manage.html">健康码</a></li>
+					<li><a href="manage.html">全球疫情</a></li>
+					<li><a href="user.html">用户管理</a></li>
+					<li><a href="#trail">轨迹图</a></li>
+					<li><a href="admin.html" >权限设置</a></li>
+
+				</ul>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div id="a1">
+	<div id="yi1">
+			<div id="total">
+				<p>绿码</p>
+				<data style="color: rgb(16,174,186)">9789742</data>
+			</div>
+			<div id="finish">
+				<p>红码</p>
+				<data style="color: rgb(232,109,72)">6873</data>
+			</div>
+			<div id="no">
+				<p>黄码</p>
+				<data style="color: rgb(236,146,23)">8432</data>
+			</div>
+	</div>
+	<div id="chart1">
+
+	</div>
+</div>
+<div id="chart2">
+
+</div>
+<hr style="width: 80%;margin-left: 9%;">
+<div id="a3">
+	<div id="yi3">
+		<div id="world">
+			<p>全国（现有确诊）</p>
+			<p id="m1" style="color: rgb(232,49,50)"></p>
+		</div>
+		<div id="china">
+			<p>全球（现有确诊）</p>
+			<p id="m2" style="color: rgb(255,106,87)"></p>
+		</div>
+		<div id="ningbo">
+			<p>宁波（现有确诊）</p>
+			<p id="m3" style="color: rgb(71,109,160)"></p>
+		</div>
+	</div>
+	<div id="chart3">
+
+	</div>
+</div>
+<div id="chart4">
+</div>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.js"></script>
+<script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=2.0&ak=DD279b2a90afdf0ae7a3796787a0742e"></script>
+<script type="text/javascript" src="//api.map.baidu.com/library/TrackAnimation/src/TrackAnimation_min.js"></script>
+<script src="js/manage.js"></script>
+</body>
+</html>
